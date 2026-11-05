@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="description" content="KOPI RIMBA — Nikmati pengalaman specialty coffee dengan cita rasa khas dan biji kopi pilihan dari petani lokal. Taste Your Roots.">
+  <meta name="author" content="KOPI RIMBA">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KOPI RIMBA | Premium Specialty Coffee">
+<meta property="og:description" content="Taste Your Roots. Nikmati pengalaman specialty coffee dari biji kopi pilihan lokal.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="stylesheet" href="style.css">
+
+
+
+    <meta charset="UTF-8">
+    <title>KOPI RIMBA | Premium Specialty Coffee</title>
+</head>
+<body>
+
+<button id="backToTop">↑</button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+    <div class="logo">KOPI RIMBA.</div>
+
+    <ul class="nav-menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+    <button class="menu-toggle">☰</button>
+
+    <button class="cart-button">
+        🛒 Keranjang
+        (<span id="cart-count">0</span>)
+    </button>
+
+</nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero reveal">
+
+        <div class="hero-content">
+
+            <p class="subtitle">
+                SPECIALTY COFFEE • INDONESIA
+            </p>
+
+            <h1>
+                TASTE YOUR<br>
+                ROOTS.
+            </h1>
+
+            <p class="description">
+                Dari tanah yang dicintai,
+                tumbuh cerita dalam setiap
+                biji kopi.
+            </p>
+
+            <a href="#menu" class="btn">
+                EXPLORE OUR COFFEE ↗
+            </a>
+
+        </div>
+
+    </section>
+    
+<!-- ABOUT SECTION -->
+<section id="about" class="about reveal">
+
+    <div class="about-content">
+
+        <p class="subtitle">OUR STORY</p>
+
+        <h2>
+            Closer to Nature,<br>
+            Closer to Home.
+        </h2>
+
+        <p class="about-description">
+            KOPI RIMBA percaya bahwa kopi bukan
+            sekadar minuman. Ia adalah cerita
+            tentang tanah, manusia, dan alam
+            yang tumbuh bersama.
+
+            Kami menghadirkan kopi lokal
+            dengan karakter dan kualitas terbaik.
+        </p>
+
+        <a href="#menu" class="btn">
+            DISCOVER OUR STORY ↗
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- MENU SECTION -->
+<section class="menu reveal" id="menu">
+
+    <div class="menu-heading">
+        <p class="subtitle">OUR SELECTION</p>
+
+        <h2>Explore Our Coffee.</h2>
+
+        <p>
+            Temukan karakter rasa dalam
+            setiap cangkir kopi kami.
+        </p>
+    </div>
+<div class="search-menu">
+    <input 
+        type="text" 
+        id="searchMenu" 
+        placeholder="Cari menu kopi..."
+    >
+</div>
+<div class="menu-filter">
+    <button class="filter-btn active" data-category="all">Semua</button>
+    <button class="filter-btn" data-category="espresso">Espresso</button>
+    <button class="filter-btn" data-category="milk">Milk </button>
+    <button class="filter-btn" data-category="manual">Manual Brew</button>
+</div>
+    <div class="menu-container">
+
+        <div class="menu-card reveal" data-category="espresso">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=600"
+            alt="Espresso" loading="lazy">
+
+            <h3>Rimba Espresso</h3>
+
+            <p>
+                Kopi dengan karakter kuat,
+                aroma khas dan rasa mendalam.
+            </p>
+
+            <span>Rp 20.000</span>
+            <button class="order-btn"
+        data-product="Rimba Espresso">
+    PESAN SEKARANG
+<button
+        class="add-cart"
+        data-product="Rimba Espresso"
+        data-price="20000">
+
+        TAMBAH KE KERANJANG
+
+    </button>
+        </div>
+
+
+        <div class="menu-card reveal" data-category="milk">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+            alt="Latte" loading="lazy">
+
+            <h3>Forest Latte</h3>
+
+            <p>
+                Perpaduan espresso dan susu
+                dengan rasa lembut dan seimbang.
+            </p>
+
+            <span>Rp 25.000</span>
+
+            <button class="order-btn"
+        data-product="Rimba Espresso">
+    PESAN SEKARANG
+<button
+        class="add-cart"
+        data-product="Rimba Signature"
+        data-price="25000">
+
+        TAMBAH KE KERANJANG
+
+    </button>
+        </div>
+
+
+        <div class="menu-card reveal" data-category="manual">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600"
+            alt="Coffee" loading="lazy">
+
+            <h3>Wild Brew</h3>
+
+            <p>
+                Seduhan kopi pilihan lokal
+                dengan karakter autentik.
+            </p>
+
+            <span>Rp 23.000</span>
+            <button class="order-btn"
+        data-product="Rimba Espresso">
+    PESAN SEKARANG
+<button
+        class="add-cart"
+        data-product="wild Brew"
+        data-price="23000">
+
+        TAMBAH KE KERANJANG
+
+    </button>
+        </div>
+
+    </div>
+<p id="noMenu" class="no-menu">
+    ☕ Maaf, menu yang kamu cari belum tersedia.
+    <br>
+    Coba cari menu lainnya, ya!
+</p>
+</section>
+<div class="cart-overlay" id="cartOverlay">
+
+</div>
+<div class="cart-box" id="cartBox">
+
+    <button id="closeCart">✕</button>
+
+    <h2>Keranjang Saya</h2>
+
+    <p>
+    Jumlah produk:
+    <span id="cart-count-display">0</span>
+    </p>
+
+    <div id="cart-items">
+        Belum ada produk.
+    </div>
+
+    <h3>
+        Total: Rp<span id="cart-total">0</span>
+    </h3>
+
+    <button id="checkout-btn">
+        CHECKOUT
+    </button>
+    
+    <button id="clear-cart">KOSONGKAN KERANJANG
+
+    </button>
+
+   <div id="checkout-summary" style="display: none;">
+
+    <h2>Ringkasan Pesanan</h2>
+    <div id="order-details"></div>
+    <h3 id="order-total"></h3>
+    
+    <div class="checkout-form">
+
+    <h3>Data Pemesan</h3>
+
+    <input
+        type="text"
+        id="customer-name"
+        placeholder="Nama lengkap"
+    >
+
+    <input
+        type="tel"
+        id="customer-phone"
+        placeholder="Nomor WhatsApp"
+    >
+
+    <button id="send-order">
+        KIRIM PESANAN
+    </button>
+
+</div>
+
+    </div>
+
+</div>
+<!-- NOTIFIKASI KERANJANG -->
+<div id="cartToast" class="cart-toast">
+    ☕ Produk berhasil ditambahkan ke keranjang!
+</div>
+<script src="script.js"></script>
+
+<div id="successToast" class="success-toast">
+    <span>✓</span>
+    <div>
+        <strong>Pesanan Berhasil!</strong>
+        <p>Terima kasih telah memilih KOPI RIMBA.</p>
+    </div>
+</div>
+ </body>
+
+</body>
+</html>
